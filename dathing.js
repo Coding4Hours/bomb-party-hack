@@ -19,7 +19,7 @@ document.body.appendChild(container);
 window.usedWords = [];
 window.words = [];
 
-fetch('https://cdn.jsdelivr.net/gh/Coding4Hours/cdn@main/wordlist.10000')
+fetch('https://raw.githack.com/Coding4Hours/bomb-party-hack/main/words.txt')
 	.then(res => res.text())
 	.then(text => {
 		window.words = text.split('\n').filter(w => w.length > 0);
